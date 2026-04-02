@@ -1122,3 +1122,40 @@ java.sql.SQLIntegrityConstraintViolationException: Column 'workflow_name' cannot
 2026-04-02T18:08:20.931+05:30  INFO 23956 --- [AutomationEngine] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-04-02T18:08:20.936+05:30  INFO 23956 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-04-02T18:08:20.961+05:30  INFO 23956 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-02T18:08:28.545+05:30  INFO 27356 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Starting AutomationEngineApplication using Java 25.0.1 with PID 27356 (C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine\target\classes started by meenu in C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine)
+2026-04-02T18:08:28.553+05:30  INFO 27356 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-04-02T18:08:30.738+05:30  INFO 27356 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-02T18:08:31.079+05:30  INFO 27356 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 318 ms. Found 1 JPA repository interface.
+2026-04-02T18:08:32.397+05:30  INFO 27356 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-02T18:08:32.432+05:30  INFO 27356 --- [AutomationEngine] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-02T18:08:32.432+05:30  INFO 27356 --- [AutomationEngine] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-02T18:08:32.603+05:30  INFO 27356 --- [AutomationEngine] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3913 ms
+2026-04-02T18:08:32.980+05:30  INFO 27356 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-02T18:08:33.702+05:30  INFO 27356 --- [AutomationEngine] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4db6348b
+2026-04-02T18:08:33.706+05:30  INFO 27356 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-02T18:08:33.880+05:30  INFO 27356 --- [AutomationEngine] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-02T18:08:34.039+05:30  INFO 27356 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-02T18:08:35.071+05:30  INFO 27356 --- [AutomationEngine] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-02T18:08:35.260+05:30  INFO 27356 --- [AutomationEngine] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/taskflow_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.30
+	Default catalog/schema: taskflow_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-02T18:08:36.666+05:30  INFO 27356 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-02T18:08:36.677+05:30  INFO 27356 --- [AutomationEngine] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T18:08:36.821+05:30  INFO 27356 --- [AutomationEngine] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-02T18:08:38.444+05:30  WARN 27356 --- [AutomationEngine] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-02T18:08:38.531+05:30  INFO 27356 --- [AutomationEngine] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-02T18:08:39.496+05:30  INFO 27356 --- [AutomationEngine] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-02T18:08:39.693+05:30  INFO 27356 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/AutomationEngine'
+2026-04-02T18:08:39.711+05:30  INFO 27356 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Started AutomationEngineApplication in 12.224 seconds (process running for 13.396)
+2026-04-02T18:08:45.473+05:30  INFO 27356 --- [AutomationEngine] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/AutomationEngine]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-02T18:08:45.474+05:30  INFO 27356 --- [AutomationEngine] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-02T18:08:45.477+05:30  INFO 27356 --- [AutomationEngine] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
