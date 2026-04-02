@@ -1,0 +1,1124 @@
+2026-04-02T13:32:14.068+05:30  INFO 27692 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Starting AutomationEngineApplication using Java 25.0.1 with PID 27692 (C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine\target\classes started by meenu in C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine)
+2026-04-02T13:32:14.085+05:30  INFO 27692 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-04-02T13:32:16.101+05:30  INFO 27692 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-02T13:32:16.378+05:30  INFO 27692 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 262 ms. Found 1 JPA repository interface.
+2026-04-02T13:32:17.584+05:30  INFO 27692 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-02T13:32:17.609+05:30  INFO 27692 --- [AutomationEngine] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-02T13:32:17.610+05:30  INFO 27692 --- [AutomationEngine] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-02T13:32:17.764+05:30  INFO 27692 --- [AutomationEngine] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3507 ms
+2026-04-02T13:32:18.137+05:30  INFO 27692 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-02T13:32:18.991+05:30  INFO 27692 --- [AutomationEngine] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3eee08f5
+2026-04-02T13:32:18.995+05:30  INFO 27692 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-02T13:32:19.143+05:30  INFO 27692 --- [AutomationEngine] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-02T13:32:19.315+05:30  INFO 27692 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-02T13:32:20.272+05:30  INFO 27692 --- [AutomationEngine] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-02T13:32:20.489+05:30  INFO 27692 --- [AutomationEngine] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/taskflow_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.30
+	Default catalog/schema: taskflow_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-02T13:32:21.815+05:30  INFO 27692 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-02T13:32:21.828+05:30  INFO 27692 --- [AutomationEngine] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T13:32:21.979+05:30  INFO 27692 --- [AutomationEngine] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-02T13:32:23.520+05:30  WARN 27692 --- [AutomationEngine] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-02T13:32:23.603+05:30  INFO 27692 --- [AutomationEngine] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-02T13:32:24.625+05:30  INFO 27692 --- [AutomationEngine] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-02T13:32:24.825+05:30  INFO 27692 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/AutomationEngine'
+2026-04-02T13:32:24.865+05:30  INFO 27692 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Started AutomationEngineApplication in 11.816 seconds (process running for 13.04)
+2026-04-02T13:32:42.245+05:30  INFO 27692 --- [AutomationEngine] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/AutomationEngine]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-02T13:32:42.246+05:30  INFO 27692 --- [AutomationEngine] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-02T13:32:42.248+05:30  INFO 27692 --- [AutomationEngine] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-02T13:32:43.668+05:30  INFO 27692 --- [AutomationEngine] [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 608 ms
+2026-04-02T13:33:02.570+05:30  INFO 27692 --- [AutomationEngine] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-02T13:33:02.586+05:30  INFO 27692 --- [AutomationEngine] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-02T13:33:02.597+05:30  INFO 27692 --- [AutomationEngine] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T13:33:02.600+05:30  INFO 27692 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-02T13:33:02.618+05:30  INFO 27692 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-02T13:33:09.143+05:30  INFO 24056 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Starting AutomationEngineApplication using Java 25.0.1 with PID 24056 (C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine\target\classes started by meenu in C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine)
+2026-04-02T13:33:09.151+05:30  INFO 24056 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-04-02T13:33:11.023+05:30  INFO 24056 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-02T13:33:11.250+05:30  INFO 24056 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 212 ms. Found 1 JPA repository interface.
+2026-04-02T13:33:12.340+05:30  INFO 24056 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-02T13:33:12.362+05:30  INFO 24056 --- [AutomationEngine] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-02T13:33:12.363+05:30  INFO 24056 --- [AutomationEngine] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-02T13:33:12.496+05:30  INFO 24056 --- [AutomationEngine] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3184 ms
+2026-04-02T13:33:12.839+05:30  INFO 24056 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-02T13:33:13.552+05:30  INFO 24056 --- [AutomationEngine] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4db6348b
+2026-04-02T13:33:13.556+05:30  INFO 24056 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-02T13:33:13.698+05:30  INFO 24056 --- [AutomationEngine] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-02T13:33:13.832+05:30  INFO 24056 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-02T13:33:14.727+05:30  INFO 24056 --- [AutomationEngine] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-02T13:33:14.903+05:30  INFO 24056 --- [AutomationEngine] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/taskflow_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.30
+	Default catalog/schema: taskflow_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-02T13:33:16.145+05:30  INFO 24056 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-02T13:33:16.157+05:30  INFO 24056 --- [AutomationEngine] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T13:33:16.295+05:30  INFO 24056 --- [AutomationEngine] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-02T13:33:17.653+05:30  WARN 24056 --- [AutomationEngine] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-02T13:33:17.735+05:30  INFO 24056 --- [AutomationEngine] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-02T13:33:18.617+05:30  INFO 24056 --- [AutomationEngine] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-02T13:33:18.764+05:30  INFO 24056 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/AutomationEngine'
+2026-04-02T13:33:18.778+05:30  INFO 24056 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Started AutomationEngineApplication in 10.594 seconds (process running for 11.683)
+2026-04-02T13:33:27.308+05:30  INFO 24056 --- [AutomationEngine] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/AutomationEngine]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-02T13:33:27.309+05:30  INFO 24056 --- [AutomationEngine] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-02T13:33:27.312+05:30  INFO 24056 --- [AutomationEngine] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-04-02T13:33:28.213+05:30  INFO 24056 --- [AutomationEngine] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 608 ms
+2026-04-02T13:43:28.824+05:30  INFO 24056 --- [AutomationEngine] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-02T13:43:28.840+05:30  INFO 24056 --- [AutomationEngine] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-02T13:43:28.849+05:30  INFO 24056 --- [AutomationEngine] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T13:43:28.852+05:30  INFO 24056 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-02T13:43:28.866+05:30  INFO 24056 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-02T13:43:35.535+05:30  INFO 27348 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Starting AutomationEngineApplication using Java 25.0.1 with PID 27348 (C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine\target\classes started by meenu in C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine)
+2026-04-02T13:43:35.541+05:30  INFO 27348 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-04-02T13:43:37.352+05:30  INFO 27348 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-02T13:43:37.576+05:30  INFO 27348 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 207 ms. Found 1 JPA repository interface.
+2026-04-02T13:43:38.652+05:30  INFO 27348 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-02T13:43:38.677+05:30  INFO 27348 --- [AutomationEngine] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-02T13:43:38.677+05:30  INFO 27348 --- [AutomationEngine] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-02T13:43:38.817+05:30  INFO 27348 --- [AutomationEngine] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3158 ms
+2026-04-02T13:43:39.171+05:30  INFO 27348 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-02T13:43:39.797+05:30  INFO 27348 --- [AutomationEngine] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60194904
+2026-04-02T13:43:39.800+05:30  INFO 27348 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-02T13:43:39.936+05:30  INFO 27348 --- [AutomationEngine] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-02T13:43:40.056+05:30  INFO 27348 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-02T13:43:40.837+05:30  INFO 27348 --- [AutomationEngine] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-02T13:43:40.998+05:30  INFO 27348 --- [AutomationEngine] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/taskflow_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.30
+	Default catalog/schema: taskflow_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-02T13:43:42.163+05:30  INFO 27348 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-02T13:43:42.173+05:30  INFO 27348 --- [AutomationEngine] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T13:43:42.294+05:30  INFO 27348 --- [AutomationEngine] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-02T13:43:43.646+05:30  WARN 27348 --- [AutomationEngine] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-02T13:43:43.713+05:30  INFO 27348 --- [AutomationEngine] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-02T13:43:44.586+05:30  INFO 27348 --- [AutomationEngine] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-02T13:43:44.725+05:30  INFO 27348 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/AutomationEngine'
+2026-04-02T13:43:44.740+05:30  INFO 27348 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Started AutomationEngineApplication in 10.131 seconds (process running for 11.199)
+2026-04-02T13:43:57.398+05:30  INFO 27348 --- [AutomationEngine] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/AutomationEngine]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-02T13:43:57.399+05:30  INFO 27348 --- [AutomationEngine] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-02T13:43:57.402+05:30  INFO 27348 --- [AutomationEngine] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-04-02T13:43:58.233+05:30  INFO 27348 --- [AutomationEngine] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 512 ms
+2026-04-02T13:50:06.854+05:30  INFO 27348 --- [AutomationEngine] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-02T13:50:06.873+05:30  INFO 27348 --- [AutomationEngine] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-02T13:50:06.884+05:30  INFO 27348 --- [AutomationEngine] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T13:50:06.888+05:30  INFO 27348 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-02T13:50:06.902+05:30  INFO 27348 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-02T13:50:44.577+05:30  INFO 14844 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Starting AutomationEngineApplication using Java 25.0.1 with PID 14844 (C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine\target\classes started by meenu in C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine)
+2026-04-02T13:50:44.585+05:30  INFO 14844 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-04-02T13:50:46.461+05:30  INFO 14844 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-02T13:50:46.693+05:30  INFO 14844 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 218 ms. Found 1 JPA repository interface.
+2026-04-02T13:50:47.842+05:30  INFO 14844 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-02T13:50:47.867+05:30  INFO 14844 --- [AutomationEngine] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-02T13:50:47.867+05:30  INFO 14844 --- [AutomationEngine] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-02T13:50:47.991+05:30  INFO 14844 --- [AutomationEngine] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3263 ms
+2026-04-02T13:50:48.337+05:30  INFO 14844 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-02T13:50:48.953+05:30  INFO 14844 --- [AutomationEngine] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4db6348b
+2026-04-02T13:50:48.957+05:30  INFO 14844 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-02T13:50:49.103+05:30  INFO 14844 --- [AutomationEngine] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-02T13:50:49.235+05:30  INFO 14844 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-02T13:50:50.168+05:30  INFO 14844 --- [AutomationEngine] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-02T13:50:50.338+05:30  INFO 14844 --- [AutomationEngine] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/taskflow_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.30
+	Default catalog/schema: taskflow_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-02T13:50:51.548+05:30  INFO 14844 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-02T13:50:51.561+05:30  INFO 14844 --- [AutomationEngine] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T13:50:51.691+05:30  INFO 14844 --- [AutomationEngine] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-02T13:50:52.981+05:30  WARN 14844 --- [AutomationEngine] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-02T13:50:53.052+05:30  INFO 14844 --- [AutomationEngine] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-02T13:50:53.906+05:30  INFO 14844 --- [AutomationEngine] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-02T13:50:54.033+05:30  INFO 14844 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/AutomationEngine'
+2026-04-02T13:50:54.046+05:30  INFO 14844 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Started AutomationEngineApplication in 10.418 seconds (process running for 11.508)
+2026-04-02T13:51:53.070+05:30  INFO 14844 --- [AutomationEngine] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-02T13:51:53.087+05:30  INFO 14844 --- [AutomationEngine] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-02T13:51:53.096+05:30  INFO 14844 --- [AutomationEngine] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T13:51:53.099+05:30  INFO 14844 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-02T13:51:53.115+05:30  INFO 14844 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-02T13:52:01.772+05:30  INFO 22020 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Starting AutomationEngineApplication using Java 25.0.1 with PID 22020 (C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine\target\classes started by meenu in C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine)
+2026-04-02T13:52:01.780+05:30  INFO 22020 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-04-02T13:52:04.055+05:30  INFO 22020 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-02T13:52:04.364+05:30  INFO 22020 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 286 ms. Found 1 JPA repository interface.
+2026-04-02T13:52:05.740+05:30  INFO 22020 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-02T13:52:05.774+05:30  INFO 22020 --- [AutomationEngine] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-02T13:52:05.774+05:30  INFO 22020 --- [AutomationEngine] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-02T13:52:05.971+05:30  INFO 22020 --- [AutomationEngine] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4063 ms
+2026-04-02T13:52:06.392+05:30  INFO 22020 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-02T13:52:07.190+05:30  INFO 22020 --- [AutomationEngine] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60194904
+2026-04-02T13:52:07.195+05:30  INFO 22020 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-02T13:52:07.358+05:30  INFO 22020 --- [AutomationEngine] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-02T13:52:07.525+05:30  INFO 22020 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-02T13:52:08.700+05:30  INFO 22020 --- [AutomationEngine] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-02T13:52:08.936+05:30  INFO 22020 --- [AutomationEngine] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/taskflow_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.30
+	Default catalog/schema: taskflow_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-02T13:52:10.579+05:30  INFO 22020 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-02T13:52:10.592+05:30  INFO 22020 --- [AutomationEngine] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T13:52:10.751+05:30  INFO 22020 --- [AutomationEngine] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-02T13:52:12.355+05:30  WARN 22020 --- [AutomationEngine] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-02T13:52:12.444+05:30  INFO 22020 --- [AutomationEngine] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-02T13:52:13.464+05:30  INFO 22020 --- [AutomationEngine] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-02T13:52:13.620+05:30  INFO 22020 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/AutomationEngine'
+2026-04-02T13:52:13.637+05:30  INFO 22020 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Started AutomationEngineApplication in 13.277 seconds (process running for 14.625)
+2026-04-02T13:56:05.433+05:30  INFO 22020 --- [AutomationEngine] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-02T13:56:05.449+05:30  INFO 22020 --- [AutomationEngine] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-02T13:56:05.458+05:30  INFO 22020 --- [AutomationEngine] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T13:56:05.460+05:30  INFO 22020 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-02T13:56:05.476+05:30  INFO 22020 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-02T13:56:12.276+05:30  INFO 21788 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Starting AutomationEngineApplication using Java 25.0.1 with PID 21788 (C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine\target\classes started by meenu in C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine)
+2026-04-02T13:56:12.282+05:30  INFO 21788 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-04-02T13:56:14.085+05:30  INFO 21788 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-02T13:56:14.309+05:30  INFO 21788 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 208 ms. Found 1 JPA repository interface.
+2026-04-02T13:56:15.327+05:30  INFO 21788 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-02T13:56:15.361+05:30  INFO 21788 --- [AutomationEngine] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-02T13:56:15.361+05:30  INFO 21788 --- [AutomationEngine] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-02T13:56:15.481+05:30  INFO 21788 --- [AutomationEngine] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3072 ms
+2026-04-02T13:56:15.820+05:30  INFO 21788 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-02T13:56:16.450+05:30  INFO 21788 --- [AutomationEngine] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60194904
+2026-04-02T13:56:16.453+05:30  INFO 21788 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-02T13:56:16.587+05:30  INFO 21788 --- [AutomationEngine] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-02T13:56:16.725+05:30  INFO 21788 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-02T13:56:17.616+05:30  INFO 21788 --- [AutomationEngine] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-02T13:56:17.785+05:30  INFO 21788 --- [AutomationEngine] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/taskflow_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.30
+	Default catalog/schema: taskflow_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-02T13:56:18.942+05:30  INFO 21788 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-02T13:56:18.952+05:30  INFO 21788 --- [AutomationEngine] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T13:56:19.069+05:30  INFO 21788 --- [AutomationEngine] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-02T13:56:20.345+05:30  WARN 21788 --- [AutomationEngine] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-02T13:56:20.411+05:30  INFO 21788 --- [AutomationEngine] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-02T13:56:21.223+05:30  INFO 21788 --- [AutomationEngine] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-02T13:56:21.346+05:30  INFO 21788 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/AutomationEngine'
+2026-04-02T13:56:21.361+05:30  INFO 21788 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Started AutomationEngineApplication in 10.002 seconds (process running for 11.067)
+2026-04-02T13:56:35.632+05:30  INFO 21788 --- [AutomationEngine] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/AutomationEngine]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-02T13:56:35.633+05:30  INFO 21788 --- [AutomationEngine] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-02T13:56:35.643+05:30  INFO 21788 --- [AutomationEngine] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2026-04-02T13:56:36.501+05:30  INFO 21788 --- [AutomationEngine] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 526 ms
+2026-04-02T14:09:58.770+05:30  INFO 21788 --- [AutomationEngine] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-02T14:09:58.786+05:30  INFO 21788 --- [AutomationEngine] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-02T14:09:58.796+05:30  INFO 21788 --- [AutomationEngine] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T14:09:58.800+05:30  INFO 21788 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-02T14:09:58.819+05:30  INFO 21788 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-02T14:10:06.065+05:30  INFO 23840 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Starting AutomationEngineApplication using Java 25.0.1 with PID 23840 (C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine\target\classes started by meenu in C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine)
+2026-04-02T14:10:06.072+05:30  INFO 23840 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-04-02T14:10:08.113+05:30  INFO 23840 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-02T14:10:08.325+05:30  INFO 23840 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 197 ms. Found 1 JPA repository interface.
+2026-04-02T14:10:09.384+05:30  INFO 23840 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-02T14:10:09.407+05:30  INFO 23840 --- [AutomationEngine] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-02T14:10:09.408+05:30  INFO 23840 --- [AutomationEngine] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-02T14:10:09.543+05:30  INFO 23840 --- [AutomationEngine] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3316 ms
+2026-04-02T14:10:09.874+05:30  INFO 23840 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-02T14:10:10.614+05:30  INFO 23840 --- [AutomationEngine] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4db6348b
+2026-04-02T14:10:10.617+05:30  INFO 23840 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-02T14:10:10.738+05:30  INFO 23840 --- [AutomationEngine] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-02T14:10:10.879+05:30  INFO 23840 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-02T14:10:11.774+05:30  INFO 23840 --- [AutomationEngine] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-02T14:10:11.937+05:30  INFO 23840 --- [AutomationEngine] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/taskflow_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.30
+	Default catalog/schema: taskflow_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-02T14:10:13.133+05:30  INFO 23840 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-02T14:10:13.143+05:30  INFO 23840 --- [AutomationEngine] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T14:10:13.261+05:30  INFO 23840 --- [AutomationEngine] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-02T14:10:14.607+05:30  WARN 23840 --- [AutomationEngine] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-02T14:10:14.685+05:30  INFO 23840 --- [AutomationEngine] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-02T14:10:15.573+05:30  INFO 23840 --- [AutomationEngine] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-02T14:10:15.708+05:30  INFO 23840 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/AutomationEngine'
+2026-04-02T14:10:15.724+05:30  INFO 23840 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Started AutomationEngineApplication in 10.7 seconds (process running for 11.86)
+2026-04-02T14:10:55.193+05:30  INFO 23840 --- [AutomationEngine] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/AutomationEngine]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-02T14:10:55.193+05:30  INFO 23840 --- [AutomationEngine] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-02T14:10:55.193+05:30  INFO 23840 --- [AutomationEngine] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-04-02T14:10:55.860+05:30  WARN 23840 --- [AutomationEngine] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 1048, SQLState: 23000
+2026-04-02T14:10:55.860+05:30  WARN 23840 --- [AutomationEngine] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.error             : Column 'workflow_name' cannot be null
+2026-04-02T14:10:55.910+05:30 ERROR 23840 --- [AutomationEngine] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/AutomationEngine] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Column 'workflow_name' cannot be null] [insert into workflow_master (created_by,created_date,entity_code,modified_by,modified_date,source_data,status_flag,tenant_id,unique_field,workflow_code,workflow_id,workflow_name,workflow_version,alt_key) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)]; SQL [insert into workflow_master (created_by,created_date,entity_code,modified_by,modified_date,source_data,status_flag,tenant_id,unique_field,workflow_code,workflow_id,workflow_name,workflow_version,alt_key) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)]; constraint [workflow_name]] with root cause
+
+java.sql.SQLIntegrityConstraintViolationException: Column 'workflow_name' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:109) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1166) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1101) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1448) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1084) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-7.0.2.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:181) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.performNonBatchedMutation(AbstractMutationExecutor.java:145) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:53) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:66) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:180) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:120) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:93) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:108) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:634) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:505) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:381) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.internal.SessionImpl.fireFlush(SessionImpl.java:1484) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:481) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2111) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2033) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:410) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:166) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commitNoRollbackOnly(JdbcResourceLocalTransactionCoordinatorImpl.java:248) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:242) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:89) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:553) ~[spring-orm-7.0.6.jar:7.0.6]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:794) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:757) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:687) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:408) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.6.jar:7.0.6]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.6.jar:7.0.6]
+	at com.jsp.AutomationEngine.Service.WorkFlowServiceImpl$$SpringCGLIB$$0.processActivateWorkflow(<generated>) ~[classes/:na]
+	at com.jsp.AutomationEngine.Controller.WorkFlowController.activateWorkFlow(WorkFlowController.java:29) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2026-04-02T14:13:05.071+05:30  INFO 23840 --- [AutomationEngine] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-02T14:13:05.089+05:30  INFO 23840 --- [AutomationEngine] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-02T14:13:05.098+05:30  INFO 23840 --- [AutomationEngine] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T14:13:05.101+05:30  INFO 23840 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-02T14:13:05.120+05:30  INFO 23840 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-02T14:13:11.776+05:30  INFO 15260 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Starting AutomationEngineApplication using Java 25.0.1 with PID 15260 (C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine\target\classes started by meenu in C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine)
+2026-04-02T14:13:11.783+05:30  INFO 15260 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-04-02T14:13:13.665+05:30  INFO 15260 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-02T14:13:13.915+05:30  INFO 15260 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 233 ms. Found 1 JPA repository interface.
+2026-04-02T14:13:14.962+05:30  INFO 15260 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-02T14:13:14.987+05:30  INFO 15260 --- [AutomationEngine] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-02T14:13:14.987+05:30  INFO 15260 --- [AutomationEngine] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-02T14:13:15.119+05:30  INFO 15260 --- [AutomationEngine] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3218 ms
+2026-04-02T14:13:15.439+05:30  INFO 15260 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-02T14:13:16.056+05:30  INFO 15260 --- [AutomationEngine] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4db6348b
+2026-04-02T14:13:16.060+05:30  INFO 15260 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-02T14:13:16.201+05:30  INFO 15260 --- [AutomationEngine] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-02T14:13:16.335+05:30  INFO 15260 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-02T14:13:17.216+05:30  INFO 15260 --- [AutomationEngine] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-02T14:13:17.390+05:30  INFO 15260 --- [AutomationEngine] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/taskflow_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.30
+	Default catalog/schema: taskflow_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-02T14:13:18.544+05:30  INFO 15260 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-02T14:13:18.554+05:30  INFO 15260 --- [AutomationEngine] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T14:13:18.680+05:30  INFO 15260 --- [AutomationEngine] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-02T14:13:19.996+05:30  WARN 15260 --- [AutomationEngine] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-02T14:13:20.053+05:30  INFO 15260 --- [AutomationEngine] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-02T14:13:20.919+05:30  INFO 15260 --- [AutomationEngine] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-02T14:13:21.045+05:30  INFO 15260 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/AutomationEngine'
+2026-04-02T14:13:21.060+05:30  INFO 15260 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Started AutomationEngineApplication in 10.248 seconds (process running for 11.287)
+2026-04-02T14:13:42.102+05:30  INFO 15260 --- [AutomationEngine] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/AutomationEngine]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-02T14:13:42.103+05:30  INFO 15260 --- [AutomationEngine] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-02T14:13:42.105+05:30  INFO 15260 --- [AutomationEngine] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-02T14:13:42.989+05:30  INFO 15260 --- [AutomationEngine] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 551 ms
+2026-04-02T14:33:31.784+05:30  INFO 15260 --- [AutomationEngine] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-02T14:33:31.804+05:30  INFO 15260 --- [AutomationEngine] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-02T14:33:31.814+05:30  INFO 15260 --- [AutomationEngine] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T14:33:31.818+05:30  INFO 15260 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-02T14:33:31.840+05:30  INFO 15260 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-02T14:33:38.451+05:30  INFO 26396 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Starting AutomationEngineApplication using Java 25.0.1 with PID 26396 (C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine\target\classes started by meenu in C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine)
+2026-04-02T14:33:38.459+05:30  INFO 26396 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-04-02T14:33:40.278+05:30  INFO 26396 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-02T14:33:40.513+05:30  INFO 26396 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 215 ms. Found 1 JPA repository interface.
+2026-04-02T14:33:41.595+05:30  INFO 26396 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-02T14:33:41.624+05:30  INFO 26396 --- [AutomationEngine] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-02T14:33:41.624+05:30  INFO 26396 --- [AutomationEngine] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-02T14:33:41.757+05:30  INFO 26396 --- [AutomationEngine] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3177 ms
+2026-04-02T14:33:42.106+05:30  INFO 26396 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-02T14:33:42.779+05:30  INFO 26396 --- [AutomationEngine] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7742a276
+2026-04-02T14:33:42.783+05:30  INFO 26396 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-02T14:33:42.933+05:30  INFO 26396 --- [AutomationEngine] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-02T14:33:43.077+05:30  INFO 26396 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-02T14:33:44.021+05:30  INFO 26396 --- [AutomationEngine] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-02T14:33:44.199+05:30  INFO 26396 --- [AutomationEngine] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/taskflow_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.30
+	Default catalog/schema: taskflow_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-02T14:33:45.417+05:30  INFO 26396 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-02T14:33:45.427+05:30  INFO 26396 --- [AutomationEngine] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T14:33:45.552+05:30  INFO 26396 --- [AutomationEngine] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-02T14:33:46.876+05:30  WARN 26396 --- [AutomationEngine] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-02T14:33:46.955+05:30  INFO 26396 --- [AutomationEngine] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-02T14:33:47.851+05:30  INFO 26396 --- [AutomationEngine] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-02T14:33:48.002+05:30  INFO 26396 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/AutomationEngine'
+2026-04-02T14:33:48.021+05:30  INFO 26396 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Started AutomationEngineApplication in 10.501 seconds (process running for 11.551)
+2026-04-02T14:34:05.297+05:30  INFO 26396 --- [AutomationEngine] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/AutomationEngine]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-02T14:34:05.298+05:30  INFO 26396 --- [AutomationEngine] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-02T14:34:05.301+05:30  INFO 26396 --- [AutomationEngine] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-04-02T14:34:06.161+05:30  INFO 26396 --- [AutomationEngine] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 529 ms
+2026-04-02T14:36:52.066+05:30  WARN 26396 --- [AutomationEngine] [http-nio-8080-exec-7] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 1048, SQLState: 23000
+2026-04-02T14:36:52.066+05:30  WARN 26396 --- [AutomationEngine] [http-nio-8080-exec-7] org.hibernate.orm.jdbc.error             : Column 'workflow_name' cannot be null
+2026-04-02T14:36:52.085+05:30 ERROR 26396 --- [AutomationEngine] [http-nio-8080-exec-7] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/AutomationEngine] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Column 'workflow_name' cannot be null] [insert into workflow_master (created_by,created_date,entity_code,modified_by,modified_date,source_data,status_flag,tenant_id,unique_field,workflow_code,workflow_id,workflow_name,workflow_version,alt_key) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)]; SQL [insert into workflow_master (created_by,created_date,entity_code,modified_by,modified_date,source_data,status_flag,tenant_id,unique_field,workflow_code,workflow_id,workflow_name,workflow_version,alt_key) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)]; constraint [workflow_name]] with root cause
+
+java.sql.SQLIntegrityConstraintViolationException: Column 'workflow_name' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:109) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1166) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1101) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1448) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1084) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-7.0.2.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:181) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.performNonBatchedMutation(AbstractMutationExecutor.java:145) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:53) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:66) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:180) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:120) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:93) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:108) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:634) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:505) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:381) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.internal.SessionImpl.fireFlush(SessionImpl.java:1484) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:481) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2111) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2033) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:410) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:166) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commitNoRollbackOnly(JdbcResourceLocalTransactionCoordinatorImpl.java:248) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:242) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:89) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:553) ~[spring-orm-7.0.6.jar:7.0.6]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:794) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:757) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:687) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:408) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.6.jar:7.0.6]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.6.jar:7.0.6]
+	at com.jsp.AutomationEngine.Service.WorkFlowServiceImpl$$SpringCGLIB$$0.processActivateWorkflow(<generated>) ~[classes/:na]
+	at com.jsp.AutomationEngine.Controller.WorkFlowController.activateWorkFlow(WorkFlowController.java:29) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2026-04-02T14:43:18.272+05:30  INFO 26396 --- [AutomationEngine] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-02T14:43:18.288+05:30  INFO 26396 --- [AutomationEngine] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-02T14:43:18.296+05:30  INFO 26396 --- [AutomationEngine] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T14:43:18.298+05:30  INFO 26396 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-02T14:43:18.311+05:30  INFO 26396 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-02T14:43:21.919+05:30  INFO 7952 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Starting AutomationEngineApplication using Java 25.0.1 with PID 7952 (C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine\target\classes started by meenu in C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine)
+2026-04-02T14:43:21.924+05:30  INFO 7952 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-04-02T14:43:23.716+05:30  INFO 7952 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-02T14:43:23.967+05:30  INFO 7952 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 235 ms. Found 1 JPA repository interface.
+2026-04-02T14:43:25.055+05:30  INFO 7952 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-02T14:43:25.077+05:30  INFO 7952 --- [AutomationEngine] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-02T14:43:25.077+05:30  INFO 7952 --- [AutomationEngine] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-02T14:43:25.200+05:30  INFO 7952 --- [AutomationEngine] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3162 ms
+2026-04-02T14:43:25.536+05:30  INFO 7952 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-02T14:43:26.222+05:30  INFO 7952 --- [AutomationEngine] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4db6348b
+2026-04-02T14:43:26.225+05:30  INFO 7952 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-02T14:43:26.353+05:30  INFO 7952 --- [AutomationEngine] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-02T14:43:26.491+05:30  INFO 7952 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-02T14:43:27.375+05:30  INFO 7952 --- [AutomationEngine] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-02T14:43:27.536+05:30  INFO 7952 --- [AutomationEngine] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/taskflow_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.30
+	Default catalog/schema: taskflow_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-02T14:43:28.720+05:30  INFO 7952 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-02T14:43:28.730+05:30  INFO 7952 --- [AutomationEngine] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T14:43:28.848+05:30  INFO 7952 --- [AutomationEngine] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-02T14:43:30.203+05:30  WARN 7952 --- [AutomationEngine] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-02T14:43:30.280+05:30  INFO 7952 --- [AutomationEngine] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-02T14:43:31.237+05:30  INFO 7952 --- [AutomationEngine] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-02T14:43:31.380+05:30  INFO 7952 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/AutomationEngine'
+2026-04-02T14:43:31.399+05:30  INFO 7952 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Started AutomationEngineApplication in 10.432 seconds (process running for 11.616)
+2026-04-02T14:43:45.384+05:30  INFO 7952 --- [AutomationEngine] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/AutomationEngine]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-02T14:43:45.384+05:30  INFO 7952 --- [AutomationEngine] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-02T14:43:45.386+05:30  INFO 7952 --- [AutomationEngine] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-02T14:43:45.997+05:30  WARN 7952 --- [AutomationEngine] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 1048, SQLState: 23000
+2026-04-02T14:43:45.997+05:30  WARN 7952 --- [AutomationEngine] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.error             : Column 'workflow_name' cannot be null
+2026-04-02T14:43:46.018+05:30 ERROR 7952 --- [AutomationEngine] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/AutomationEngine] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Column 'workflow_name' cannot be null] [insert into workflow_master (created_by,created_date,entity_code,modified_by,modified_date,source_data,status_flag,tenant_id,unique_field,workflow_code,workflow_id,workflow_name,workflow_version,alt_key) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)]; SQL [insert into workflow_master (created_by,created_date,entity_code,modified_by,modified_date,source_data,status_flag,tenant_id,unique_field,workflow_code,workflow_id,workflow_name,workflow_version,alt_key) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)]; constraint [workflow_name]] with root cause
+
+java.sql.SQLIntegrityConstraintViolationException: Column 'workflow_name' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:109) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1166) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1101) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1448) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1084) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-7.0.2.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:181) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.performNonBatchedMutation(AbstractMutationExecutor.java:145) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:53) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:66) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:180) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:120) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:93) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:108) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:634) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:505) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:381) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.internal.SessionImpl.fireFlush(SessionImpl.java:1484) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:481) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2111) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2033) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:410) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:166) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commitNoRollbackOnly(JdbcResourceLocalTransactionCoordinatorImpl.java:248) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:242) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:89) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:553) ~[spring-orm-7.0.6.jar:7.0.6]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:794) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:757) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:687) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:408) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.6.jar:7.0.6]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.6.jar:7.0.6]
+	at com.jsp.AutomationEngine.Service.WorkFlowServiceImpl$$SpringCGLIB$$0.processActivateWorkflow(<generated>) ~[classes/:na]
+	at com.jsp.AutomationEngine.Controller.WorkFlowController.activateWorkFlow(WorkFlowController.java:29) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2026-04-02T14:47:57.662+05:30  INFO 7952 --- [AutomationEngine] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-02T14:47:57.679+05:30  INFO 7952 --- [AutomationEngine] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-02T14:47:57.688+05:30  INFO 7952 --- [AutomationEngine] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T14:47:57.691+05:30  INFO 7952 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-02T14:47:57.707+05:30  INFO 7952 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-02T14:48:04.274+05:30  INFO 25432 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Starting AutomationEngineApplication using Java 25.0.1 with PID 25432 (C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine\target\classes started by meenu in C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine)
+2026-04-02T14:48:04.281+05:30  INFO 25432 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-04-02T14:48:06.318+05:30  INFO 25432 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-02T14:48:06.631+05:30  INFO 25432 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 293 ms. Found 1 JPA repository interface.
+2026-04-02T14:48:07.749+05:30  INFO 25432 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-02T14:48:07.776+05:30  INFO 25432 --- [AutomationEngine] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-02T14:48:07.777+05:30  INFO 25432 --- [AutomationEngine] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-02T14:48:07.914+05:30  INFO 25432 --- [AutomationEngine] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3503 ms
+2026-04-02T14:48:08.252+05:30  INFO 25432 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-02T14:48:08.851+05:30  INFO 25432 --- [AutomationEngine] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60194904
+2026-04-02T14:48:08.855+05:30  INFO 25432 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-02T14:48:09.002+05:30  INFO 25432 --- [AutomationEngine] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-02T14:48:09.127+05:30  INFO 25432 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-02T14:48:09.951+05:30  INFO 25432 --- [AutomationEngine] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-02T14:48:10.128+05:30  INFO 25432 --- [AutomationEngine] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/taskflow_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.30
+	Default catalog/schema: taskflow_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-02T14:48:11.302+05:30  INFO 25432 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-02T14:48:11.315+05:30  INFO 25432 --- [AutomationEngine] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T14:48:11.443+05:30  INFO 25432 --- [AutomationEngine] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-02T14:48:12.799+05:30  WARN 25432 --- [AutomationEngine] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-02T14:48:12.874+05:30  INFO 25432 --- [AutomationEngine] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-02T14:48:13.830+05:30  INFO 25432 --- [AutomationEngine] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-02T14:48:13.990+05:30  INFO 25432 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/AutomationEngine'
+2026-04-02T14:48:14.008+05:30  INFO 25432 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Started AutomationEngineApplication in 10.762 seconds (process running for 11.841)
+2026-04-02T14:48:25.190+05:30  INFO 25432 --- [AutomationEngine] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/AutomationEngine]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-02T14:48:25.191+05:30  INFO 25432 --- [AutomationEngine] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-02T14:48:25.194+05:30  INFO 25432 --- [AutomationEngine] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-04-02T15:03:30.008+05:30  INFO 25432 --- [AutomationEngine] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-02T15:03:30.038+05:30  INFO 25432 --- [AutomationEngine] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-02T15:03:30.050+05:30  INFO 25432 --- [AutomationEngine] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T15:03:30.055+05:30  INFO 25432 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-02T15:03:30.081+05:30  INFO 25432 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-02T15:03:41.181+05:30  INFO 26936 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Starting AutomationEngineApplication using Java 25.0.1 with PID 26936 (C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine\target\classes started by meenu in C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine)
+2026-04-02T15:03:41.197+05:30  INFO 26936 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-04-02T15:03:44.470+05:30  INFO 26936 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-02T15:03:44.850+05:30  INFO 26936 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 351 ms. Found 1 JPA repository interface.
+2026-04-02T15:03:47.459+05:30  INFO 26936 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-02T15:03:47.520+05:30  INFO 26936 --- [AutomationEngine] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-02T15:03:47.522+05:30  INFO 26936 --- [AutomationEngine] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-02T15:03:47.857+05:30  INFO 26936 --- [AutomationEngine] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 6425 ms
+2026-04-02T15:03:48.579+05:30  INFO 26936 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-02T15:03:49.753+05:30  INFO 26936 --- [AutomationEngine] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4db6348b
+2026-04-02T15:03:49.762+05:30  INFO 26936 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-02T15:03:50.059+05:30  INFO 26936 --- [AutomationEngine] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-02T15:03:50.313+05:30  INFO 26936 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-02T15:03:51.637+05:30  INFO 26936 --- [AutomationEngine] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-02T15:03:51.952+05:30  INFO 26936 --- [AutomationEngine] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/taskflow_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.30
+	Default catalog/schema: taskflow_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-02T15:03:54.101+05:30  INFO 26936 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-02T15:03:54.128+05:30  INFO 26936 --- [AutomationEngine] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T15:03:54.381+05:30  INFO 26936 --- [AutomationEngine] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-02T15:03:56.794+05:30  WARN 26936 --- [AutomationEngine] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-02T15:03:56.941+05:30  INFO 26936 --- [AutomationEngine] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-02T15:03:58.785+05:30  INFO 26936 --- [AutomationEngine] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-02T15:03:59.069+05:30  INFO 26936 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/AutomationEngine'
+2026-04-02T15:03:59.094+05:30  INFO 26936 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Started AutomationEngineApplication in 19.651 seconds (process running for 21.47)
+2026-04-02T15:04:15.971+05:30  INFO 26936 --- [AutomationEngine] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/AutomationEngine]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-02T15:04:15.972+05:30  INFO 26936 --- [AutomationEngine] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-02T15:04:15.980+05:30  INFO 26936 --- [AutomationEngine] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2026-04-02T15:04:17.646+05:30  INFO 26936 --- [AutomationEngine] [http-nio-8080-exec-6] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 962 ms
+2026-04-02T15:12:46.114+05:30  INFO 26936 --- [AutomationEngine] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-02T15:12:46.146+05:30  INFO 26936 --- [AutomationEngine] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-02T15:12:46.159+05:30  INFO 26936 --- [AutomationEngine] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T15:12:46.163+05:30  INFO 26936 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-02T15:12:46.191+05:30  INFO 26936 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-02T15:12:59.802+05:30  INFO 24252 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Starting AutomationEngineApplication using Java 25.0.1 with PID 24252 (C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine\target\classes started by meenu in C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine)
+2026-04-02T15:12:59.815+05:30  INFO 24252 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-04-02T15:13:03.623+05:30  INFO 24252 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-02T15:13:04.038+05:30  INFO 24252 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 388 ms. Found 1 JPA repository interface.
+2026-04-02T15:13:06.271+05:30  INFO 24252 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-02T15:13:06.325+05:30  INFO 24252 --- [AutomationEngine] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-02T15:13:06.327+05:30  INFO 24252 --- [AutomationEngine] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-02T15:13:06.652+05:30  INFO 24252 --- [AutomationEngine] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 6504 ms
+2026-04-02T15:13:07.482+05:30  INFO 24252 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-02T15:13:08.671+05:30  INFO 24252 --- [AutomationEngine] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4db6348b
+2026-04-02T15:13:08.680+05:30  INFO 24252 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-02T15:13:08.995+05:30  INFO 24252 --- [AutomationEngine] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-02T15:13:09.314+05:30  INFO 24252 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-02T15:13:11.019+05:30  INFO 24252 --- [AutomationEngine] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-02T15:13:11.331+05:30  INFO 24252 --- [AutomationEngine] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/taskflow_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.30
+	Default catalog/schema: taskflow_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-02T15:13:13.560+05:30  INFO 24252 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-02T15:13:13.580+05:30  INFO 24252 --- [AutomationEngine] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T15:13:13.880+05:30  INFO 24252 --- [AutomationEngine] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-02T15:13:16.349+05:30  WARN 24252 --- [AutomationEngine] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-02T15:13:16.500+05:30  INFO 24252 --- [AutomationEngine] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-02T15:13:18.338+05:30  INFO 24252 --- [AutomationEngine] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-02T15:13:18.615+05:30  INFO 24252 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/AutomationEngine'
+2026-04-02T15:13:18.643+05:30  INFO 24252 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Started AutomationEngineApplication in 20.721 seconds (process running for 22.814)
+2026-04-02T15:13:37.928+05:30  INFO 24252 --- [AutomationEngine] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/AutomationEngine]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-02T15:13:37.929+05:30  INFO 24252 --- [AutomationEngine] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-02T15:13:37.934+05:30  INFO 24252 --- [AutomationEngine] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-04-02T15:43:32.855+05:30  WARN 24252 --- [AutomationEngine] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=29m24s215ms193µs900ns).
+2026-04-02T16:08:47.016+05:30  WARN 24252 --- [AutomationEngine] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m14s113ms288µs300ns).
+2026-04-02T16:26:28.027+05:30  INFO 24252 --- [AutomationEngine] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-02T16:26:28.048+05:30  INFO 24252 --- [AutomationEngine] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-02T16:26:28.065+05:30  INFO 24252 --- [AutomationEngine] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T16:26:28.075+05:30  INFO 24252 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-02T16:26:28.089+05:30  INFO 24252 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-02T16:26:35.285+05:30  INFO 6640 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Starting AutomationEngineApplication using Java 25.0.1 with PID 6640 (C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine\target\classes started by meenu in C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine)
+2026-04-02T16:26:35.293+05:30  INFO 6640 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-04-02T16:26:37.168+05:30  INFO 6640 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-02T16:26:37.389+05:30  INFO 6640 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 205 ms. Found 1 JPA repository interface.
+2026-04-02T16:26:38.556+05:30  INFO 6640 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-02T16:26:38.580+05:30  INFO 6640 --- [AutomationEngine] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-02T16:26:38.581+05:30  INFO 6640 --- [AutomationEngine] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-02T16:26:38.715+05:30  INFO 6640 --- [AutomationEngine] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3270 ms
+2026-04-02T16:26:39.057+05:30  INFO 6640 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-02T16:26:39.728+05:30  INFO 6640 --- [AutomationEngine] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4db6348b
+2026-04-02T16:26:39.732+05:30  INFO 6640 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-02T16:26:39.894+05:30  INFO 6640 --- [AutomationEngine] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-02T16:26:40.037+05:30  INFO 6640 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-02T16:26:40.932+05:30  INFO 6640 --- [AutomationEngine] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-02T16:26:41.147+05:30  INFO 6640 --- [AutomationEngine] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/taskflow_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.30
+	Default catalog/schema: taskflow_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-02T16:26:42.373+05:30  INFO 6640 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-02T16:26:42.389+05:30  INFO 6640 --- [AutomationEngine] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T16:26:42.527+05:30  INFO 6640 --- [AutomationEngine] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-02T16:26:44.016+05:30  WARN 6640 --- [AutomationEngine] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-02T16:26:44.089+05:30  INFO 6640 --- [AutomationEngine] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-02T16:26:44.989+05:30  INFO 6640 --- [AutomationEngine] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-02T16:26:45.170+05:30  INFO 6640 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/AutomationEngine'
+2026-04-02T16:26:45.189+05:30  INFO 6640 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Started AutomationEngineApplication in 10.841 seconds (process running for 11.898)
+2026-04-02T16:27:26.527+05:30  INFO 6640 --- [AutomationEngine] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/AutomationEngine]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-02T16:27:26.528+05:30  INFO 6640 --- [AutomationEngine] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-02T16:27:26.530+05:30  INFO 6640 --- [AutomationEngine] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-02T16:29:12.293+05:30  INFO 6640 --- [AutomationEngine] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-02T16:29:12.325+05:30  INFO 6640 --- [AutomationEngine] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-02T16:29:12.340+05:30  INFO 6640 --- [AutomationEngine] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T16:29:12.345+05:30  INFO 6640 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-02T16:29:12.372+05:30  INFO 6640 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-02T16:29:19.300+05:30  INFO 3488 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Starting AutomationEngineApplication using Java 25.0.1 with PID 3488 (C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine\target\classes started by meenu in C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine)
+2026-04-02T16:29:19.307+05:30  INFO 3488 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-04-02T16:29:21.221+05:30  INFO 3488 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-02T16:29:21.451+05:30  INFO 3488 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 214 ms. Found 1 JPA repository interface.
+2026-04-02T16:29:22.579+05:30  INFO 3488 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-02T16:29:22.602+05:30  INFO 3488 --- [AutomationEngine] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-02T16:29:22.602+05:30  INFO 3488 --- [AutomationEngine] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-02T16:29:22.736+05:30  INFO 3488 --- [AutomationEngine] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3274 ms
+2026-04-02T16:29:23.092+05:30  INFO 3488 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-02T16:29:23.775+05:30  INFO 3488 --- [AutomationEngine] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4db6348b
+2026-04-02T16:29:23.779+05:30  INFO 3488 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-02T16:29:23.926+05:30  INFO 3488 --- [AutomationEngine] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-02T16:29:24.063+05:30  INFO 3488 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-02T16:29:24.927+05:30  INFO 3488 --- [AutomationEngine] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-02T16:29:25.108+05:30  INFO 3488 --- [AutomationEngine] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/taskflow_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.30
+	Default catalog/schema: taskflow_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-02T16:29:26.248+05:30  INFO 3488 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-02T16:29:26.268+05:30  INFO 3488 --- [AutomationEngine] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T16:29:26.411+05:30  INFO 3488 --- [AutomationEngine] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-02T16:29:27.743+05:30  WARN 3488 --- [AutomationEngine] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-02T16:29:27.829+05:30  INFO 3488 --- [AutomationEngine] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-02T16:29:28.741+05:30  INFO 3488 --- [AutomationEngine] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-02T16:29:28.918+05:30  INFO 3488 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/AutomationEngine'
+2026-04-02T16:29:28.944+05:30  INFO 3488 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Started AutomationEngineApplication in 10.633 seconds (process running for 11.713)
+2026-04-02T16:29:52.573+05:30  INFO 3488 --- [AutomationEngine] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/AutomationEngine]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-02T16:29:52.575+05:30  INFO 3488 --- [AutomationEngine] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-02T16:29:52.577+05:30  INFO 3488 --- [AutomationEngine] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-02T16:31:32.581+05:30  INFO 3488 --- [AutomationEngine] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-02T16:31:32.596+05:30  INFO 3488 --- [AutomationEngine] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-02T16:31:32.603+05:30  INFO 3488 --- [AutomationEngine] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T16:31:32.605+05:30  INFO 3488 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-02T16:31:32.617+05:30  INFO 3488 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-02T17:05:16.660+05:30  INFO 27088 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Starting AutomationEngineApplication using Java 25.0.1 with PID 27088 (C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine\target\classes started by meenu in C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine)
+2026-04-02T17:05:16.668+05:30  INFO 27088 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-04-02T17:05:18.646+05:30  INFO 27088 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-02T17:05:18.926+05:30  INFO 27088 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 263 ms. Found 1 JPA repository interface.
+2026-04-02T17:05:20.479+05:30  INFO 27088 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-02T17:05:20.505+05:30  INFO 27088 --- [AutomationEngine] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-02T17:05:20.506+05:30  INFO 27088 --- [AutomationEngine] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-02T17:05:20.640+05:30  INFO 27088 --- [AutomationEngine] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3827 ms
+2026-04-02T17:05:21.017+05:30  INFO 27088 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-02T17:05:21.830+05:30  INFO 27088 --- [AutomationEngine] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60194904
+2026-04-02T17:05:21.833+05:30  INFO 27088 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-02T17:05:21.980+05:30  INFO 27088 --- [AutomationEngine] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-02T17:05:22.137+05:30  INFO 27088 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-02T17:05:23.014+05:30  INFO 27088 --- [AutomationEngine] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-02T17:05:23.216+05:30  INFO 27088 --- [AutomationEngine] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/taskflow_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.30
+	Default catalog/schema: taskflow_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-02T17:05:24.573+05:30  INFO 27088 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-02T17:05:24.583+05:30  INFO 27088 --- [AutomationEngine] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T17:05:24.705+05:30  INFO 27088 --- [AutomationEngine] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-02T17:05:26.641+05:30  WARN 27088 --- [AutomationEngine] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-02T17:05:26.729+05:30  INFO 27088 --- [AutomationEngine] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-02T17:05:27.665+05:30  INFO 27088 --- [AutomationEngine] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-02T17:05:27.815+05:30  INFO 27088 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/AutomationEngine'
+2026-04-02T17:05:27.833+05:30  INFO 27088 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Started AutomationEngineApplication in 12.188 seconds (process running for 13.348)
+2026-04-02T17:15:21.070+05:30  INFO 27088 --- [AutomationEngine] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/AutomationEngine]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-02T17:15:21.070+05:30  INFO 27088 --- [AutomationEngine] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-02T17:15:21.073+05:30  INFO 27088 --- [AutomationEngine] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-02T17:15:22.095+05:30  INFO 27088 --- [AutomationEngine] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 598 ms
+2026-04-02T17:28:46.786+05:30  INFO 27088 --- [AutomationEngine] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-02T17:28:46.820+05:30  INFO 27088 --- [AutomationEngine] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-02T17:28:46.837+05:30  INFO 27088 --- [AutomationEngine] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T17:28:46.843+05:30  INFO 27088 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-02T17:28:46.872+05:30  INFO 27088 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-02T17:28:53.990+05:30  INFO 26876 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Starting AutomationEngineApplication using Java 25.0.1 with PID 26876 (C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine\target\classes started by meenu in C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine)
+2026-04-02T17:28:53.996+05:30  INFO 26876 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-04-02T17:28:56.068+05:30  INFO 26876 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-02T17:28:56.300+05:30  INFO 26876 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 210 ms. Found 1 JPA repository interface.
+2026-04-02T17:28:57.466+05:30  INFO 26876 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-02T17:28:57.490+05:30  INFO 26876 --- [AutomationEngine] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-02T17:28:57.490+05:30  INFO 26876 --- [AutomationEngine] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-02T17:28:57.622+05:30  INFO 26876 --- [AutomationEngine] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3506 ms
+2026-04-02T17:28:57.962+05:30  INFO 26876 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-02T17:28:58.706+05:30  INFO 26876 --- [AutomationEngine] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60194904
+2026-04-02T17:28:58.711+05:30  INFO 26876 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-02T17:28:58.918+05:30  INFO 26876 --- [AutomationEngine] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-02T17:28:59.060+05:30  INFO 26876 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-02T17:29:00.124+05:30  INFO 26876 --- [AutomationEngine] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-02T17:29:00.318+05:30  INFO 26876 --- [AutomationEngine] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/taskflow_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.30
+	Default catalog/schema: taskflow_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-02T17:29:01.710+05:30  INFO 26876 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-02T17:29:01.720+05:30  INFO 26876 --- [AutomationEngine] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T17:29:01.875+05:30  INFO 26876 --- [AutomationEngine] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-02T17:29:03.419+05:30  WARN 26876 --- [AutomationEngine] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-02T17:29:03.514+05:30  INFO 26876 --- [AutomationEngine] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-02T17:29:04.486+05:30  INFO 26876 --- [AutomationEngine] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-02T17:29:04.634+05:30  INFO 26876 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/AutomationEngine'
+2026-04-02T17:29:04.649+05:30  INFO 26876 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Started AutomationEngineApplication in 11.732 seconds (process running for 12.809)
+2026-04-02T17:29:18.571+05:30  INFO 26876 --- [AutomationEngine] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/AutomationEngine]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-02T17:29:18.572+05:30  INFO 26876 --- [AutomationEngine] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-02T17:29:18.575+05:30  INFO 26876 --- [AutomationEngine] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-02T17:32:23.155+05:30  INFO 26876 --- [AutomationEngine] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-02T17:32:23.172+05:30  INFO 26876 --- [AutomationEngine] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-02T17:32:23.181+05:30  INFO 26876 --- [AutomationEngine] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T17:32:23.183+05:30  INFO 26876 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-02T17:32:23.198+05:30  INFO 26876 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-02T17:32:29.564+05:30  INFO 20864 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Starting AutomationEngineApplication using Java 25.0.1 with PID 20864 (C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine\target\classes started by meenu in C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine)
+2026-04-02T17:32:29.570+05:30  INFO 20864 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-04-02T17:32:31.378+05:30  INFO 20864 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-02T17:32:31.590+05:30  INFO 20864 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 192 ms. Found 1 JPA repository interface.
+2026-04-02T17:32:32.662+05:30  INFO 20864 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-02T17:32:32.685+05:30  INFO 20864 --- [AutomationEngine] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-02T17:32:32.685+05:30  INFO 20864 --- [AutomationEngine] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-02T17:32:32.818+05:30  INFO 20864 --- [AutomationEngine] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3140 ms
+2026-04-02T17:32:33.173+05:30  INFO 20864 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-02T17:32:33.763+05:30  INFO 20864 --- [AutomationEngine] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60194904
+2026-04-02T17:32:33.767+05:30  INFO 20864 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-02T17:32:33.929+05:30  INFO 20864 --- [AutomationEngine] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-02T17:32:34.084+05:30  INFO 20864 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-02T17:32:35.079+05:30  INFO 20864 --- [AutomationEngine] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-02T17:32:35.311+05:30  INFO 20864 --- [AutomationEngine] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/taskflow_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.30
+	Default catalog/schema: taskflow_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-02T17:32:36.473+05:30  INFO 20864 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-02T17:32:36.485+05:30  INFO 20864 --- [AutomationEngine] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T17:32:36.626+05:30  INFO 20864 --- [AutomationEngine] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-02T17:32:38.200+05:30  WARN 20864 --- [AutomationEngine] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-02T17:32:38.291+05:30  INFO 20864 --- [AutomationEngine] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-02T17:32:40.222+05:30  INFO 20864 --- [AutomationEngine] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-02T17:32:40.404+05:30  INFO 20864 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/AutomationEngine'
+2026-04-02T17:32:40.428+05:30  INFO 20864 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Started AutomationEngineApplication in 11.784 seconds (process running for 12.828)
+2026-04-02T17:56:46.937+05:30  WARN 20864 --- [AutomationEngine] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=24m13s213ms742µs600ns).
+2026-04-02T18:02:50.267+05:30  INFO 20864 --- [AutomationEngine] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-02T18:02:50.283+05:30  INFO 20864 --- [AutomationEngine] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-02T18:02:50.292+05:30  INFO 20864 --- [AutomationEngine] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T18:02:50.295+05:30  INFO 20864 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-02T18:02:50.305+05:30  INFO 20864 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-02T18:03:51.269+05:30  INFO 28524 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Starting AutomationEngineApplication using Java 25.0.1 with PID 28524 (C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine\target\classes started by meenu in C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine)
+2026-04-02T18:03:51.276+05:30  INFO 28524 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-04-02T18:03:53.179+05:30  INFO 28524 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-02T18:03:53.418+05:30  INFO 28524 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 221 ms. Found 1 JPA repository interface.
+2026-04-02T18:03:54.587+05:30  INFO 28524 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-02T18:03:54.607+05:30  INFO 28524 --- [AutomationEngine] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-02T18:03:54.608+05:30  INFO 28524 --- [AutomationEngine] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-02T18:03:54.737+05:30  INFO 28524 --- [AutomationEngine] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3341 ms
+2026-04-02T18:03:55.120+05:30  INFO 28524 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-02T18:03:55.754+05:30  INFO 28524 --- [AutomationEngine] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4db6348b
+2026-04-02T18:03:55.758+05:30  INFO 28524 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-02T18:03:55.914+05:30  INFO 28524 --- [AutomationEngine] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-02T18:03:56.038+05:30  INFO 28524 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-02T18:03:56.919+05:30  INFO 28524 --- [AutomationEngine] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-02T18:03:57.110+05:30  INFO 28524 --- [AutomationEngine] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/taskflow_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.30
+	Default catalog/schema: taskflow_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-02T18:03:58.344+05:30  INFO 28524 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-02T18:03:58.354+05:30  INFO 28524 --- [AutomationEngine] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T18:03:58.470+05:30  INFO 28524 --- [AutomationEngine] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-02T18:03:59.871+05:30  WARN 28524 --- [AutomationEngine] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-02T18:03:59.945+05:30  INFO 28524 --- [AutomationEngine] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-02T18:04:00.837+05:30  INFO 28524 --- [AutomationEngine] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-02T18:04:01.007+05:30  INFO 28524 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/AutomationEngine'
+2026-04-02T18:04:01.033+05:30  INFO 28524 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Started AutomationEngineApplication in 10.746 seconds (process running for 11.82)
+2026-04-02T18:04:14.865+05:30  INFO 28524 --- [AutomationEngine] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/AutomationEngine]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-02T18:04:14.865+05:30  INFO 28524 --- [AutomationEngine] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-02T18:04:14.867+05:30  INFO 28524 --- [AutomationEngine] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-02T18:06:12.088+05:30  INFO 28524 --- [AutomationEngine] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-02T18:06:12.105+05:30  INFO 28524 --- [AutomationEngine] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-02T18:06:12.113+05:30  INFO 28524 --- [AutomationEngine] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T18:06:12.116+05:30  INFO 28524 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-02T18:06:12.131+05:30  INFO 28524 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-02T18:06:18.695+05:30  INFO 23956 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Starting AutomationEngineApplication using Java 25.0.1 with PID 23956 (C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine\target\classes started by meenu in C:\Users\meenu\OneDrive\Desktop\Workspace\springboot\AutomationEngine)
+2026-04-02T18:06:18.703+05:30  INFO 23956 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-04-02T18:06:20.633+05:30  INFO 23956 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-02T18:06:20.849+05:30  INFO 23956 --- [AutomationEngine] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 199 ms. Found 1 JPA repository interface.
+2026-04-02T18:06:21.972+05:30  INFO 23956 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-02T18:06:21.998+05:30  INFO 23956 --- [AutomationEngine] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-02T18:06:21.998+05:30  INFO 23956 --- [AutomationEngine] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-02T18:06:20.783+05:30  INFO 23956 --- [AutomationEngine] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1957 ms
+2026-04-02T18:06:21.114+05:30  INFO 23956 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-02T18:06:21.762+05:30  INFO 23956 --- [AutomationEngine] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60194904
+2026-04-02T18:06:21.765+05:30  INFO 23956 --- [AutomationEngine] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-02T18:06:21.895+05:30  INFO 23956 --- [AutomationEngine] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-02T18:06:22.020+05:30  INFO 23956 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-02T18:06:22.844+05:30  INFO 23956 --- [AutomationEngine] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-02T18:06:23.034+05:30  INFO 23956 --- [AutomationEngine] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/taskflow_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.30
+	Default catalog/schema: taskflow_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-02T18:06:24.192+05:30  INFO 23956 --- [AutomationEngine] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-02T18:06:24.203+05:30  INFO 23956 --- [AutomationEngine] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T18:06:24.318+05:30  INFO 23956 --- [AutomationEngine] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-02T18:06:25.600+05:30  WARN 23956 --- [AutomationEngine] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-02T18:06:25.678+05:30  INFO 23956 --- [AutomationEngine] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-02T18:06:26.583+05:30  INFO 23956 --- [AutomationEngine] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-02T18:06:26.713+05:30  INFO 23956 --- [AutomationEngine] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/AutomationEngine'
+2026-04-02T18:06:26.732+05:30  INFO 23956 --- [AutomationEngine] [main] c.j.A.AutomationEngineApplication        : Started AutomationEngineApplication in 9.048 seconds (process running for 11.474)
+2026-04-02T18:07:03.209+05:30  INFO 23956 --- [AutomationEngine] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/AutomationEngine]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-02T18:07:03.210+05:30  INFO 23956 --- [AutomationEngine] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-02T18:07:03.213+05:30  INFO 23956 --- [AutomationEngine] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-02T18:08:20.888+05:30  INFO 23956 --- [AutomationEngine] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-02T18:08:20.906+05:30  INFO 23956 --- [AutomationEngine] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-02T18:08:20.931+05:30  INFO 23956 --- [AutomationEngine] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T18:08:20.936+05:30  INFO 23956 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-02T18:08:20.961+05:30  INFO 23956 --- [AutomationEngine] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
