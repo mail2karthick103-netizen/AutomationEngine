@@ -10,6 +10,8 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
+import java.util.HashMap;
+import java.util.Map;
 
 @Configuration
 @EnableTransactionManagement
@@ -34,6 +36,11 @@ public class DataSourceConfig {
             emf.setDataSource(dataSource());
             emf.setPackagesToScan("com.jsp.AutomationEngine");
             emf.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
+            Map<String, Object> props = new HashMap<>();
+            props.put("hibernate.hbm2ddl.auto", "update"); // 🔥 important
+            props.put("hibernate.show_sql", true);
+
+            emf.setJpaPropertyMap(props);
             return emf;
         }
 

@@ -8,6 +8,7 @@ import java.util.List;
 
 @Repository
 public interface WorkFlowService {
+
      AppResponseDto processSaveWorkFlow(List<WorkFlowDto> workFlowDtoList);
      AppResponseDto processSaveOrUpdateDraft(List<WorkFlowDto> dtoList);
      AppResponseDto processActivateWorkflow(WorkFlowDto workflow);

@@ -2,13 +2,21 @@ package com.jsp.AutomationEngine.Service;
 
 import com.jsp.AutomationEngine.Dto.AppResponseDto;
 import com.jsp.AutomationEngine.Dto.WorkFlowDto;
+import com.jsp.AutomationEngine.Model.NodeModel;
 import com.jsp.AutomationEngine.Model.WorkFlowModel;
+import com.jsp.AutomationEngine.Repository.NodeRepository;
 import com.jsp.AutomationEngine.Repository.WorkFlowRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.xml.sax.InputSource;
+
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
+import java.io.StringReader;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -17,6 +25,9 @@ public class WorkFlowServiceImpl implements WorkFlowService {
 
     @Autowired
     private WorkFlowRepository workFlowRepository;
+    @Autowired
+    private NodeRepository nodeRepository;
+
 
     // Save Method
     @Override
@@ -31,6 +42,8 @@ public class WorkFlowServiceImpl implements WorkFlowService {
             return error(ex);
         }
     }
+
+
 
     @Override
     public AppResponseDto processSaveOrUpdateDraft(List<WorkFlowDto> dtoList) {
@@ -82,6 +95,7 @@ public class WorkFlowServiceImpl implements WorkFlowService {
         model.setTenantId(dto.getTenantId());
         model.setUniqueField(dto.getUniqueField());
         model.setEntityCode(dto.getEntityCode());
+        model.setWorkflowName(dto.getWorkflowName());
         return model;
     }
 
@@ -93,25 +107,19 @@ public class WorkFlowServiceImpl implements WorkFlowService {
 
             List<WorkFlowModel> list = workFlowRepository.findByWorkflowCode(workflow.getWorkflowCode());
 
-            Integer maxVersion = workFlowRepository.maxValue(workflow.getWorkflowCode());
-
             for (WorkFlowModel wf : list) {
                 if ("ACTIVE".equals(wf.getStatusFlag()))
                     wf.setStatusFlag("INACTIVE");
             }
 
-            WorkFlowModel newVersion = new WorkFlowModel();
-            newVersion.setWorkflowCode(workflow.getWorkflowCode());
-            newVersion.setWorkflowVersion(maxVersion + 1);
-            newVersion.setStatusFlag("ACTIVE");
-            newVersion.setWorkflowId(workflow.getWorkflowCode() + "_" + (maxVersion + 1));
+            Integer maxVersion = workFlowRepository.maxValue(workflow.getWorkflowCode());
 
-            newVersion.setSourceData(draft.getSourceData());
-            newVersion.setTenantId(draft.getTenantId());
-            newVersion.setUniqueField(draft.getUniqueField());
-            newVersion.setEntityCode(draft.getEntityCode());
-            newVersion.setWorkflowName(draft.getWorkflowName());
-            list.add(newVersion);
+            draft.setStatusFlag("ACTIVE");
+            draft.setWorkflowVersion(maxVersion + 1);
+            draft.setWorkflowId(draft.getWorkflowCode() + "_" + (maxVersion + 1));
+
+            List<NodeModel> nodeList = getNodeList(draft.getSourceData());
+            nodeRepository.saveAll(nodeList);
 
 
 
@@ -121,7 +129,21 @@ public class WorkFlowServiceImpl implements WorkFlowService {
         }
     }
 
+    public List<NodeModel> getNodeList(String xml){
+        try {
+            SAXParserFactory factory = SAXParserFactory.newInstance();
+            SAXParser saxParser = factory.newSAXParser();
 
+            BPMNHandler handler = new BPMNHandler();
+            saxParser.parse(new InputSource(new StringReader(xml)), handler);
+
+            return handler.getNodes();
+
+        } catch (Exception e) {
+            throw new RuntimeException("Error parsing XML", e);
+        }
+
+    }
 
 
     private AppResponseDto success(List<WorkFlowModel> data) {
