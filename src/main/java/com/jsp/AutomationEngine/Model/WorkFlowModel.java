@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import java.math.BigInteger;
+import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
 @Data
@@ -36,7 +37,7 @@ public class WorkFlowModel extends WorkFlowData {
         private String workflowName;
 
         @Column(name = "status_flag")
-        private String statusFlag = "Draft";
+        private String statusFlag = "DRAFT";
 
         @Column(name = "unique_field")
         private String uniqueField;
@@ -46,6 +47,10 @@ public class WorkFlowModel extends WorkFlowData {
 
         @Column(name = "entity_code")
         private String entityCode;
+
+        @Transient
+        private List<NodeModel>  nodeProperties;
+
 
 
 

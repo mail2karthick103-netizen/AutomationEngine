@@ -37,7 +37,7 @@ public class DataSourceConfig {
             emf.setPackagesToScan("com.jsp.AutomationEngine");
             emf.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
             Map<String, Object> props = new HashMap<>();
-            props.put("hibernate.hbm2ddl.auto", "update"); // 🔥 important
+            props.put("hibernate.hbm2ddl.auto", "update");
             props.put("hibernate.show_sql", true);
 
             emf.setJpaPropertyMap(props);

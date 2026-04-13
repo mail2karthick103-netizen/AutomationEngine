@@ -21,4 +21,6 @@ public interface WorkFlowRepository extends JpaRepository<WorkFlowModel, BigInte
     Integer maxValue(@Param("ver") String ver);
 
     List<WorkFlowModel> findByWorkflowCode(String workflowCode);
+
+    WorkFlowModel findByWorkflowIdAndTenantId(String wfId, String tenantId);
 }

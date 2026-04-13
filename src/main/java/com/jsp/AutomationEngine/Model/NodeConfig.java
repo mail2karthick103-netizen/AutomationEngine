@@ -1,7 +1,7 @@
 package com.jsp.AutomationEngine.Model;
 
-
-import com.jsp.AutomationEngine.Service.ListToJsonConverter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.jsp.AutomationEngine.Service.ListToNodeConfigConverter1;
 import com.jsp.AutomationEngine.Service.MapToJsonConverter;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -15,33 +15,34 @@ import java.util.concurrent.ThreadLocalRandom;
 
 @Data
 @Entity
-@AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "sa_wf_node")
-public class NodeModel extends WorkFlowData {
+@AllArgsConstructor
+@Table(name = "sa_wf_nodeconfig")
+public class NodeConfig {
     @Id
-
     @Column(name = "alt_key")
     private BigInteger altKey=generateAltKey();
-    @Column(name = "workflow_id")
-    private String workflowId;
-    @Column(name = "tenant_id")
-    private String tenantId;
-    @Column(name = "node_type")
-    private String nodeType;
     @Column(name = "node_id")
     private String nodeId;
-
-    @Convert(converter = ListToJsonConverter.class)
-    @Column(name = "outgoing_nodes", columnDefinition = "TEXT")
-    private List<String> outgoingNodes;
-    @Convert(converter = ListToJsonConverter.class)
-    @Column(name = "incoming_nodes", columnDefinition = "TEXT")
-    private List<String> incomingNodes;
+    @Column(name = "node_type")
+    private String nodeType;
 
     @Convert(converter = MapToJsonConverter.class)
     @Column(name = "node_properties", columnDefinition = "TEXT")
-    private Map<String, String> nodeProperties;
+    private Map<String,String> nodeProperties;
+
+    @Column(name = "is_start_node")
+    private Boolean isStartNode;
+    @Column(name = "is_end_node")
+    private Boolean isEndNode;
+    @JsonIgnore
+    @Convert(converter = ListToNodeConfigConverter1.class)
+    @Column(name = "incoming_node")
+    private List<NodeConfig> incomingNode;
+    @JsonIgnore
+    @Convert(converter = ListToNodeConfigConverter1.class)
+    @Column(name = "outgoing_node")
+    private List<NodeConfig> outgoingNode;
 
     public BigInteger generateAltKey() {
         return new BigInteger(ThreadLocalRandom.current().nextInt(Integer.MAX_VALUE) + "");
