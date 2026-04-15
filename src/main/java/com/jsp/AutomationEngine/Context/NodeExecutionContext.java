@@ -1,7 +1,11 @@
-package com.jsp.AutomationEngine.Model;
+package com.jsp.AutomationEngine.Context;
 
+import com.jsp.AutomationEngine.Model.NodeConfig;
+import com.jsp.AutomationEngine.Model.WorkFlowModel;
+import com.jsp.AutomationEngine.Model.WorkFlowTransactionEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
@@ -11,7 +15,7 @@ import java.util.Map;
 @Data
 @Component
 @AllArgsConstructor
-
+@NoArgsConstructor
 public class NodeExecutionContext {
 
     private Date executionStart;
@@ -37,4 +41,6 @@ public class NodeExecutionContext {
         this.transactionDataMap = oldValue.transactionDataMap;
         this.nodeExecutionResult = oldValue.nodeExecutionResult;
     }
+
+
 }

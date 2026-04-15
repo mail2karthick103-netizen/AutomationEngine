@@ -1,8 +1,8 @@
 package com.jsp.AutomationEngine.Model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.jsp.AutomationEngine.Service.ListToNodeConfigConverter1;
-import com.jsp.AutomationEngine.Service.MapToJsonConverter;
+import com.jsp.AutomationEngine.Convertor.ListToNodeConfigConverter1;
+import com.jsp.AutomationEngine.Convertor.MapToJsonConverter;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

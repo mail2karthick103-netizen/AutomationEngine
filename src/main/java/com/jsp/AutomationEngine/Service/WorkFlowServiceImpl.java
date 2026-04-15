@@ -159,6 +159,15 @@ public class WorkFlowServiceImpl implements WorkFlowService {
         return byWorkflowIDAndTenantID;
     }
 
+
+    public NodeConfig getStartConfig(String workflowId) {
+        return nodeConfigRepository.findByWorkflowIdAndIsStartNodeTrue(workflowId);
+    }
+
+    public List<NodeConfig> getAllNodesConfig(String workflowId) {
+        return nodeConfigRepository.findByWorkflowIdAndIsStartNodeFalse(workflowId);
+    }
+
     private AppResponseDto success(List<WorkFlowModel> data) {
         return new AppResponseDto("200", null, "SUCCESS", data);
     }

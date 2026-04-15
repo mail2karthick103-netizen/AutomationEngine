@@ -1,5 +1,8 @@
-package com.jsp.AutomationEngine.Model;
+package com.jsp.AutomationEngine.Context;
 
+import com.jsp.AutomationEngine.Model.NodeConfig;
+import com.jsp.AutomationEngine.Model.WorkFlowModel;
+import com.jsp.AutomationEngine.Model.WorkFlowTransactionEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,9 +18,9 @@ import java.util.Map;
 public class WorkFlowTransactionContext {
 
 
-    private  WorkFlowModel workFlowModel;
-    private  WorkFlowTransactionEntity workFlowTransactionModel;
-    private  NodeConfig nextNodeConfig;
+    private WorkFlowModel workFlowModel;
+    private WorkFlowTransactionEntity workFlowTransactionModel;
+    private NodeConfig nextNodeConfig;
     private Map<String, NodeExecutionContext> currentNodeExecutionContextMap;
     private Date executionStart;
     private Date executionEnd;
